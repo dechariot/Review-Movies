@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+img:hover {
+  text-transform: scale(1.2);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +39,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.filter-bar {
+  justify-content: center;
+}
+
+.movie-board {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.movie-card {
+  width: 210px;
+  margin: 5px;
+}
+
+
+.card-title {
+  font-size: 1rem;
+}
+
+.pagination {
+  justify-content: center;
+  padding: 1rem
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
