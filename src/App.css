@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background:url(./img/body_bg.gif);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'roboto',Arial, Helvetica, sans-serif;
 }
 
 img:hover {
@@ -50,12 +50,18 @@ body {
   margin: 5px;
   border-radius: 0px;
   border: 3px solid black;
-  height: 417px;
+  height: 373px;
 }
 
 
 .card-title {
+  white-space: nowrap; 
   font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin-top: 5px;
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .item {

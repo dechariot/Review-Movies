@@ -25,6 +25,7 @@ function App() {
     let url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=${page}`;
     let response = await fetch(url);
     let data = await response.json();
+    console.log(data)
     setMovieList(data.results);
     setMoviePage(data);
     setMovies(data.results);
@@ -153,12 +154,12 @@ function App() {
               width="50"
               height="50"
               className="d-inline-block align-top"
-              /><span className="h1 font-weight-bold">Review Movies</span>
+              /><span className="display-4 font-weight-bold"> Review Movies</span>
                     </div>
 
                     <div className="col-md-3 text-left">
                         <ul>
-                            <li><a><h4>Now Playing</h4></a></li>
+                            <li><a><h4 className="font-weight-bold text-primary">Now Playing</h4></a></li>
                             <li><a>New Series Movies</a></li>
                             <li><a>New Movies</a></li>
                             <li><a>Blockbuster</a></li>
@@ -168,7 +169,7 @@ function App() {
 
                     <div className="col-md-2 text-left">
                         <ul>
-                            <li><a><h4>Category</h4></a></li>
+                            <li><a><h4 className="font-weight-bold text-primary">Category</h4></a></li>
                             <li><a>Action Movies</a></li>
                             <li><a>Horror Movies</a></li>
                             <li><a>Adventure Movies</a></li>
@@ -179,19 +180,16 @@ function App() {
                     </div>
                     <div className="col-md-3 text-left">
                         <ul>
-                            <li><a><h4>Contact</h4></a></li>
-                            <li><a>nsprisang@gmail.com</a></li>
-                            <li><a>0974070167</a></li>
-                            <li><a>Adventure Movies</a></li>
-                            <li><a>Fiction Movies</a></li>
-                            <li><a>Drama Movies</a></li>
-                            <li><a>Comedy Movies</a></li>
+                            <li><a><h4 className="font-weight-bold text-primary">Contact</h4></a></li>
+                            <li><label>Email:</label><a> nsprisang@gmail.com</a></li>
+                            <li><label>Mobile:</label><a> 0974070167</a></li>
+                            <li><label>Add:</label><a> Ho Chi Minh City, VN</a></li>
                         </ul>
                     </div>
+                    <div className="container-fluid text-center text-white font-weight-bold p-1"><h5>Made with &hearts; by <a href="https://github.com/dechariot/Review-Movies">Sang Nguyen</a> </h5> </div>
                 </div>
-
-
             </div>
+            
     </div>
   );
 }
