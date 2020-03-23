@@ -73,3 +73,7 @@ body {
   padding: 1rem;
   background: url(./img/micro_carbon.png);
 }
+
+ul {
+  list-style: none;
+}

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import Pagination from "react-js-pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import MovieCards from './components/MovieCards'
+import MovieCards from './components/MovieCards';
+import {TinyPagination} from 'react-pagination-custom';
+
 
 
 
@@ -143,36 +145,53 @@ function App() {
         linkClass="page-link"
       />
 
+<div className="container-fluid bg-secondary text-white footer">
+                <div className="row container">
+                    <div className="col-md-4 text-right">
+                    <img
+              src="./footer-img.png"
+              width="50"
+              height="50"
+              className="d-inline-block align-top"
+              /><span className="h1 font-weight-bold">Review Movies</span>
+                    </div>
 
-      <div className="container-fluid bg-secondary text-white footer">
-        <div className="row container">
-          <div className="col-md-4">
-            <ul>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-            </ul>
-          </div>
+                    <div className="col-md-3 text-left">
+                        <ul>
+                            <li><a><h4>Now Playing</h4></a></li>
+                            <li><a>New Series Movies</a></li>
+                            <li><a>New Movies</a></li>
+                            <li><a>Blockbuster</a></li>
+                            <li><a>Upcoming Moives</a></li>
+                        </ul>
+                    </div>
 
-          <div className="col-md-4">
-            <ul>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-            </ul>
-          </div>
+                    <div className="col-md-2 text-left">
+                        <ul>
+                            <li><a><h4>Category</h4></a></li>
+                            <li><a>Action Movies</a></li>
+                            <li><a>Horror Movies</a></li>
+                            <li><a>Adventure Movies</a></li>
+                            <li><a>Fiction Movies</a></li>
+                            <li><a>Drama Movies</a></li>
+                            <li><a>Comedy Movies</a></li>
+                        </ul>
+                    </div>
+                    <div className="col-md-3 text-left">
+                        <ul>
+                            <li><a><h4>Contact</h4></a></li>
+                            <li><a>nsprisang@gmail.com</a></li>
+                            <li><a>0974070167</a></li>
+                            <li><a>Adventure Movies</a></li>
+                            <li><a>Fiction Movies</a></li>
+                            <li><a>Drama Movies</a></li>
+                            <li><a>Comedy Movies</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-          <div className="col-md-4">
-            <ul>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-              <li><a>Hello</a></li>
-            </ul>
-          </div>
-        </div>
 
-
-      </div>
+            </div>
     </div>
   );
 }
