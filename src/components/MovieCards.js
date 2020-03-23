@@ -11,9 +11,9 @@ export default function MovieCards(props) {
             }
         }
         return (
-                <Card className="movie-card" style={{border:'none'}}>
+                <Card className="movie-card">
                     <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w1280${movie.poster_path}`} />
-                    <Card.Body className="bg-secondary p-1">
+                    <Card.Body className="bg-secondary p-1 item">
                         <div className="card-title font-weight-bold text-white">{movie.title}</div>
                     </Card.Body>
                 </Card>

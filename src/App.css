@@ -1,31 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  background:url(./img/body_bg.gif);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img:hover {
@@ -40,9 +16,26 @@ img:hover {
     transform: rotate(360deg);
   }
 }
-
+body {
+  background: url(./img/body_bg.gif) !important;
+}
+.header {
+  background: url(./img/header-bg.jpg);
+}
+.search-bar {
+  width: 400px !important;
+}
 .filter-bar {
-  justify-content: center;
+  font-weight: 900;
+  justify-content: space-around;
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+#basic-nav-dropdown > a {
+  color: white;
 }
 
 .movie-board {
@@ -55,11 +48,18 @@ img:hover {
 .movie-card {
   width: 210px;
   margin: 5px;
+  border-radius: 0px;
+  border: 3px solid black;
+  height: 417px;
 }
 
 
 .card-title {
   font-size: 1rem;
+}
+
+.item {
+  background: url(./img/item_bg.gif);
 }
 
 .pagination {
@@ -71,4 +71,5 @@ img:hover {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  background: url(./img/micro_carbon.png);
 }
